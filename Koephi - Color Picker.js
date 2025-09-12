@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Koephi - Color picker plus
-// @name:zh      BC颜色选择器 Plus
-// @version      1.0.4
+// @name         BC Color picker plus
+// @name:zh      BC 颜色选择器 Plus
+// @version      1.0.5
 // @namespace    k-colorpicker
 // @description  悬浮按钮和弹窗都可以拖动
 // @author       Koephi
@@ -657,7 +657,7 @@
   const hexOut = () => modal.querySelector("#cp-hex-out");
 
   const openModal = async () => {
-    overlay.style.display = "block";
+    overlay.style.display = "none";
     modal.style.display = "block";
     buildPanesIfNeeded();
     const startHex = getTargetHex() || "#FF6A00";
@@ -698,3 +698,4 @@
   const initHex = getTargetHex();
   if (initHex) setTarget(initHex);
 })();
+
