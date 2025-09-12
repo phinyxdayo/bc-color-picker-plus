@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BC Color picker plus
 // @name:zh      BC 颜色选择器 Plus
-// @version      1.0.5
+// @version      1.0.6
 // @namespace    k-colorpicker
 // @description  悬浮按钮和弹窗都可以拖动
 // @author       Koephi
@@ -33,7 +33,7 @@
     }
     #cp-fab.dragging{ cursor:grabbing; }
 
-    #cp-overlay{position:fixed;inset:0;background:rgba(0,0,0,.25);z-index:2147483646;display:none}
+    #cp-overlay{position:fixed;inset:0;background:rgba(0,0,0,.00);z-index:2147483646;display:none}
     #cp-modal{
       position:fixed; right:20px; bottom:88px; z-index:2147483647; background:#1e1e1e; color:#eaeaea;
       border-radius:12px; box-shadow:0 16px 40px rgba(0,0,0,.35); padding:10px; display:none;
@@ -657,7 +657,7 @@
   const hexOut = () => modal.querySelector("#cp-hex-out");
 
   const openModal = async () => {
-    overlay.style.display = "none";
+    overlay.style.display = "block";
     modal.style.display = "block";
     buildPanesIfNeeded();
     const startHex = getTargetHex() || "#FF6A00";
@@ -698,4 +698,5 @@
   const initHex = getTargetHex();
   if (initHex) setTarget(initHex);
 })();
+
 
