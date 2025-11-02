@@ -265,7 +265,7 @@
         const correctedB = computeChannel(inputRgb.b, actualRgb.b, targetRgb.b);
 
         const correctedHex = rgbToHex(correctedR, correctedG, correctedB);
-        if (setBack) {
+        if (true) {
             setTarget(correctedHex);
         }
         return `Correction: ${correctedHex}`;
@@ -680,4 +680,5 @@
     enableModalDrag();
 
     console.log('Color Correction UI Plus initialized.');
+
 })();
