@@ -2,12 +2,14 @@
 // @name         BC Color Correction
 // @name:zh      BC 颜色校正器
 // @namespace    k-colorcorrector
-// @version      1.0.7
+// @version      1.0.8
 // @run-at       document-end
 // @description  Flllllloating UI~
 // @author       Koephi
 // @include      /^https:\/\/(www\.)?bondage(projects\.elementfx|-(europe|asia))\.com\/.*/
 // @grant        none
+// @downloadURL https://cdn.jsdelivr.net/gh/phinyxdayo/bc-color-picker-plus@main/Koephi%20-%20Color%20Correction.user.js
+// @updateURL   https://cdn.jsdelivr.net/gh/phinyxdayo/bc-color-picker-plus@main/Koephi%20-%20Color%20Correction.user.js
 // ==/UserScript==
 
 (function() {
@@ -680,5 +682,6 @@
     enableModalDrag();
 
     console.log('Color Correction UI Plus initialized.');
+
 
 })();
