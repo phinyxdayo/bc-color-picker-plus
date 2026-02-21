@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         BC Color picker plus
 // @name:zh      BC 颜色选择器 Plus
-// @version      1.0.8
+// @version      1.0.9
 // @namespace    k-colorpicker
 // @description  悬浮按钮和弹窗都可以拖动
 // @author       Koephi
 // @include      /^https:\/\/(www\.)?bondage(projects\.elementfx|-(europe|asia))\.com\/.*/
 // @run-at       document-end
 // @grant        none
+// @downloadURL https://cdn.jsdelivr.net/gh/phinyxdayo/bc-color-picker-plus@main/Koephi%20-%20Color%20Picker.user.js
+// @updateURL   https://cdn.jsdelivr.net/gh/phinyxdayo/bc-color-picker-plus@main/Koephi%20-%20Color%20Picker.user.js
 // ==/UserScript==
 
 (function () {
@@ -698,6 +700,7 @@
   const initHex = getTargetHex();
   if (initHex) setTarget(initHex);
 })();
+
 
 
 
